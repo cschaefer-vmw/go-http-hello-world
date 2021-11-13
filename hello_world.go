@@ -17,7 +17,7 @@ func HelloWorld(w http.ResponseWriter, r *http.Request) {
 }
 
 func init() {
-  fmt.Printf("Started server at http://localhost:%v.\n", port)
+  fmt.Printf("Started serve at http://localhost:%v.\n", port)
   http.HandleFunc("/", HelloWorld)
   http.ListenAndServe(port, nil)
 }
